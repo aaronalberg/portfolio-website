@@ -1,15 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  background-color: whitesmoke;
+    background-color: whitesmoke;
+    width: 100%;
 }
 header {
-    background-image: url("files/backgroundheader2.jpeg");
+    background-color: #5AF;
 }
 h1 {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
-.center {
+img.center {
     display:block;
     margin-left: auto;
     margin-right: auto;
+}
+.profile {
+    width: 20%;
+}
+
+p.center {
+    text-align: center;
 }
