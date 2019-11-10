@@ -6,6 +6,7 @@ html, body {
 body {
     background-color: whitesmoke;
     width: 100%;
+    font-family: sans-serif;
 }
 header {
     background-color: #5AF;
