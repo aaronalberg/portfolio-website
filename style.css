@@ -77,10 +77,22 @@ footer {
   text-align: center;
 }
 footer a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 div {
   clear: left;
+}
+.foottext {
+   color: black;
+}
+footer i {
+    color: black;
+}
+#bio {
+    padding-bottom: 20%;
+}
+#work {
+    font-size: 2em;
 }
