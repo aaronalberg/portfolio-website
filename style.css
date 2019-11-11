@@ -25,9 +25,8 @@ img.center {
 }
 .profile {
     width: 20%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    
+    padding: 1%;
+    border-radius: 8%;
 }
 img.left {
     float:left;
@@ -37,6 +36,7 @@ p.center {
 }
 .profiletext {
     font-size: 1.75em;
+    padding-top: 1%;
     padding-right: 10%;
 }
 ul {
@@ -84,4 +84,3 @@ footer a {
 div {
   clear: left;
 }
-
