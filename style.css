@@ -25,10 +25,18 @@ img.center {
 }
 .profile {
     width: 20%;
+    padding-right: 2%;
+    padding-bottom: 2%;
 }
-
+img.left {
+    float:left;
+}
 p.center {
     text-align: center;
+}
+.profiletext {
+    font-size: 1.75em;
+    padding-right: 8%;
 }
 ul {
   list-style-type: none;
@@ -71,3 +79,8 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+
+div {
+  clear: left;
+}
+
