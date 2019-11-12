@@ -10,9 +10,11 @@ html, body {
 body {
     background-color: whitesmoke;
     width: 100%;
+    position: relative;
     font-family: sans-serif;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 15vh;
 }
 header {
     background-color: var(--main-theme);
@@ -149,11 +151,10 @@ footer i {
 }
 
 footer {
-  position: relative;
-  clear: both;
+  position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #555;
   color: #fff;
   text-align: center;
