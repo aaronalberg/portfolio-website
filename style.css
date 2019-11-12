@@ -18,6 +18,22 @@ header {
     background-color: var(--main-theme);
 }
 
+div {
+  clear: left;
+}
+
+.italic {
+    font-style: italic;
+}
+
+img.left {
+    float:left;
+}
+p.center {
+    text-align: center;
+}
+
+
 #wrapper {
     max-width: 1024px;
     margin: 0 auto;
@@ -31,11 +47,18 @@ h1 {
     padding-top: .5%;
     padding-bottom: 1%;
 }
+
+h2 {
+    font-size: 1.9em;
+}
+
 img.center {
     display:block;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* bio and intr0 section */
 .profile {
     width: 250px;
     padding: 1%;
@@ -47,61 +70,24 @@ img.center {
     padding-right: 10%;
     text-align: left;
 }
-
-img.left {
-    float:left;
-}
-p.center {
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.9em;
-}
-footer {
-  position: relative;
-  clear: both;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-div {
-  clear: left;
-}
-.foottext {
-   color: var(--main-theme);
-}
-footer i {
-    color: white;
-}
 #bio {
     margin-bottom: 60px;
 }
-#work {
+
+
+
+
+/* inprogress message and resume link */
+#inprogress {
     font-size: 2em;
 }
-@media only screen and (max-width: 430px) {
-    .profile {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    #wrapper {
-        width: 90%;
-    }
-    .projectpic {
-        max-width: 100%;
-        padding-bottom: 5%;
-    }
-}
 
+.resume-link {
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 1.5px var(--main-theme);
+}
+/* project chunks */
 .projectpic {
     width: 400px;
     padding-right: 1%;
@@ -121,11 +107,7 @@ footer i {
     padding-bottom: 200px;
 }
 
-.resume-link {
-    color: black;
-    text-decoration: none;
-    border-bottom: solid 1.5px var(--main-theme);
-}
+/* blockquote */
 blockquote{
     font-size: 1em;
     border-left: 10px solid #ccc;
@@ -150,6 +132,46 @@ blockquote:before {
     font-size: 3em;
     margin-bottom: 50px;
 }
-#quote {
-    font-style: italic;
+
+
+/* footer related things */
+footer a {
+  color: white;
+  text-decoration: none;
 }
+
+
+.foottext {
+   color: var(--main-theme);
+}
+footer i {
+    color: white;
+}
+
+footer {
+  position: relative;
+  clear: both;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* mobile changes */
+@media only screen and (max-width: 430px) {
+    .profile {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #wrapper {
+        width: 90%;
+    }
+    .projectpic {
+        max-width: 100%;
+        padding-bottom: 5%;
+    }
+}
+/* mobile changes end */
