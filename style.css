@@ -87,7 +87,7 @@ footer i {
 #work {
     font-size: 2em;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   .profile {
     width: 90%;
   }
