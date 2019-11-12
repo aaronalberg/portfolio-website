@@ -31,7 +31,6 @@ img.center {
     width: 20%;
     padding: 1%;
     border-radius: 8%;
-   
 }
 img.left {
     float:left;
@@ -39,37 +38,14 @@ img.left {
 p.center {
     text-align: center;
 }
+
 .profiletext {
     font-size: 1.50em;
     padding-top: 1%;
     padding-right: 10%;
-    
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #aaa;
 }
 
-li {
-  float: left;
-  width: 50%;
-}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #ccc;
-}
 h2.center {
     text-align: center;
 }
