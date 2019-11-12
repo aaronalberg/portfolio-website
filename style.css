@@ -11,10 +11,19 @@ body {
     background-color: whitesmoke;
     width: 100%;
     font-family: sans-serif;
+    text-align: center;
+    margin: 0 auto;
 }
 header {
     background-color: var(--main-theme);
 }
+
+#wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     color: white;
@@ -28,10 +37,17 @@ img.center {
     margin-right: auto;
 }
 .profile {
-    width: 20%;
+    width: 250px;
     padding: 1%;
     border-radius: 8%;
 }
+.profiletext {
+    font-size: 1.50em;
+    padding-top: 1%;
+    padding-right: 10%;
+    text-align: left;
+}
+
 img.left {
     float:left;
 }
@@ -39,18 +55,11 @@ p.center {
     text-align: center;
 }
 
-.profiletext {
-    font-size: 1.50em;
-    padding-top: 1%;
-    padding-right: 10%;
-}
-
-
 h2.center {
     text-align: center;
 }
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -77,4 +86,9 @@ footer i {
 }
 #work {
     font-size: 2em;
+}
+@media only screen and (max-width: 360px) {
+  .profile {
+    width: 90%;
+  }
 }
