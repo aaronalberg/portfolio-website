@@ -108,6 +108,10 @@ img.center {
 #projects {
     padding-bottom: 200px;
 }
+.ongoing {
+    font-size: .75em;
+    color: gray;
+}
 
 /* blockquote */
 blockquote{
