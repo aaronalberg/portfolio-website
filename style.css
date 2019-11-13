@@ -17,7 +17,24 @@ body {
     padding-bottom: 15vh;
 }
 header {
+    padding-top: 5px;
     background-color: var(--main-theme);
+    
+}
+#headertext {
+    
+    left: 10vw; 
+    text-align: center;
+    color: black;
+}
+header i {
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.blue {
+    color: var(--main-theme);
 }
 
 div {
@@ -101,9 +118,9 @@ img.center {
     text-align: left;
 }
 .projecttext a {
-    color: black;
+    color: blue;
     text-decoration: none;
-    border-bottom: solid 1.5px var(--main-theme);
+    
 }
 #projects {
     padding-bottom: 200px;
@@ -177,6 +194,10 @@ footer {
     .projectpic {
         max-width: 100%;
         padding-bottom: 5%;
+    }
+    #headername {
+        
+        width: 100%;
     }
 }
 /* mobile changes end */
