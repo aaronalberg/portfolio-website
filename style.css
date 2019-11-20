@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
     position: relative;
     font-family: sans-serif;
@@ -57,6 +57,9 @@ a:hover {
 }
 a.icon:hover i {
     color: floralwhite;
+}
+.clear {
+    clear: both;
 }
 
 
@@ -116,7 +119,9 @@ img.center {
 /* project chunks */
 .projectpic {
     width: 400px;
-    padding-right: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    border: solid 1px grey;
 }
 .projecttitle {
     text-align: left;
