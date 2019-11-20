@@ -52,6 +52,12 @@ img.left {
 p.center {
     text-align: center;
 }
+a:hover {
+    border-bottom: solid 1.5px var(--main-theme);
+}
+a.icon:hover i {
+    color: floralwhite;
+}
 
 
 #wrapper {
@@ -117,6 +123,7 @@ img.center {
 }
 .projecttext {
     text-align: left;
+    
 }
 .projecttext a {
     color: blue;
@@ -184,7 +191,7 @@ footer {
 
 
 /* mobile changes */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 612px) {
     .profile {
         width: 100%;
         margin-bottom: 30px;
@@ -193,12 +200,31 @@ footer {
         width: 90%;
     }
     .projectpic {
-        max-width: 100%;
+        width: 100%;
         padding-bottom: 5%;
-    }
-    #headername {
+        float: none;
         
+    }
+
+    #headername {
         width: 100%;
     }
+    
+    footer a {
+        float: none;
+        display: block;
+        line-height: 1.5;
+    }
+    footer a:hover {
+        border-bottom: none;
+    }
+    footer i:hover {
+        color:black;
+    }
+    
+    .pipe {
+        display: none;
+    }
+    
 }
 /* mobile changes end */
