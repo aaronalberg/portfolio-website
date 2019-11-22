@@ -217,6 +217,14 @@ h2 {
     text-align: left;
     
 }
+.button {
+    color: white;
+    float:left;
+    text-align: left;
+    background-color: var(--main-theme);
+    padding: 4px;
+    
+}
 .projecttext a {
     color: blue;
     text-decoration: none;
