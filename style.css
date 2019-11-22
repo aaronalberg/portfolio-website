@@ -20,36 +20,55 @@ body {
 header {
     padding-top: 5px;
     display: none;
-    /* background-color: var(--main-theme); */
+    background-color: var(--main-theme);
+    color: white;
+    height: 150px;
     
 }
+
 #headertext {
-    left: 10vw; 
-    text-align: center;
-    color: black;
     
+    text-align: left;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 3em;
+}
+
+#leftheader {
+    float: left;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    width: 49vw;
     
 }
-#headername {
-    padding-right: 2%;
+#rightheader {
+    font-size: 1.2em;
+    float: left;
+    text-align: center;
+    width: 50vw;
+    margin-top: 5vh;
+    
+}
+#rightheader p {
+    display: inline;
+}
+
+#rightheader div {
+    
+    padding-bottom: 5%;
+}
+
+header i {
+    color: white;
+    display: inline;
     font-size: 1.5em;
 }
-h1 .icon {
-    font-size: 2em;
-}
-header i {
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: .75em;
+.icon {
+    display: inline; 
 }
 
 .blue {
     color: var(--main-theme);
-}
-
-div {
-  clear: left;
 }
 
 .italic {
@@ -152,8 +171,8 @@ img.center {
 /* project chunks */
 
 .projectcard {
-    background-color: gainsboro;
-    border-radius: 5px;
+    background-color: #e8e8e8;
+    border-radius: 12px;
     padding: 1%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -162,11 +181,10 @@ img.center {
 }
 .projectpic {
     clear: both;
-    width: 200px;
-    border-radius: 5px;
-    margin-left: 2%;
-    margin-right: 1%;
-    margin-bottom: 3%;
+    width: 180px;
+    border-radius: 21px;
+    padding: 2%;
+    float: left;
     
 }
 .projecttitle {
@@ -182,7 +200,7 @@ img.center {
     
 }
 #projects {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 .ongoing {
     font-size: .75em;
@@ -238,6 +256,7 @@ footer {
   height: 100px;
   background-color: #555;
   color: #fff;
+  z-index: -1;
     
 }
 
@@ -273,7 +292,31 @@ footer {
 
 
 /* mobile changes */
-@media only screen and (max-width: 983px) {
+@media only screen and (max-width: 795px) {
+    .sidenav {
+        display: none;
+    }
+    #outerwrapper {
+        width: 100%;
+    }
+    header {
+        display: block;
+    }
+    header i {
+        display: inline;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 643px) {
+    #leftheader {
+        margin-top: 4%;
+    }
+    #headertext {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
     .profile {
         width: 70%;
         margin-bottom: 30px;
@@ -284,11 +327,11 @@ footer {
         margin-bottom: 1vh;
     }
     .projectpic {
-        width: 100%;
-        
-        margin-left: 0;
+        width: 90%;
+        margin: inherit 3%;
+        padding-top: 5%;
         float: none;
-        
+        border-radius: 20px;
     }
     
     .projectcard {
@@ -297,9 +340,6 @@ footer {
         height:auto;
     }
 
-    #headername {
-        width: 100%;
-    }
     
     footer {
         text-align: center;
@@ -337,10 +377,7 @@ footer {
     #outerwrapper {
         width: 100vw;
     }
-    header {
-        display: block;
-        
-    }
+    
     
     
 }
