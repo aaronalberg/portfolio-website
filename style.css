@@ -1,7 +1,10 @@
 :root {
     --main-theme: #5AF;
+    --sidenav-length: 250px;
 }
-
+* {
+    box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -67,7 +70,7 @@ header i {
 
 .sidenav {
   height: 100%;
-  width: 230px;
+  width: var(--sidenav-length);
   position: fixed;
   z-index: 2;
   top: 0;
@@ -75,8 +78,7 @@ header i {
   background-color: var(--main-theme);
   overflow-x: hidden;
   padding-top: 20px;
-  margin-right: 1%;
-    color: white;
+  color: white;
 }
 
 .sidenav a {
@@ -103,9 +105,6 @@ header i {
     color: var(--main-theme);
 }
 
-img.left {
-    float:left;
-}
 p.center {
     text-align: center;
 }
@@ -126,16 +125,15 @@ a.icon:hover i {
 
 
 #wrapper {
-    max-width: 960px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     text-align: center;
     padding-bottom: 100px;
-    padding-right: 10px;
-    padding-left: 10px;
+    
 }
 #outerwrapper {
     margin:0;
-    width: calc(100vw - 230px);
+    width: calc(100vw - var(--sidenav-length));
     position: absolute;
     z-index: 2;
     right:0;
@@ -173,6 +171,7 @@ h2 {
 }
 #bio {
     margin-bottom: 60px;
+    margin-left: 50px;
 }
 
 
@@ -195,13 +194,10 @@ h2 {
     background-color: #e8e8e8;
     padding: 1%;
     padding-top: 2%;
-    height: 200px;
+    height: 220px;
    
 }
-.projectcard2 {
-    padding: 1%;
-    padding-top: 2%;
-    height: 200px;
+.projectcard:nth-child(2n) {
     background-color: #d8d8d8;
 }
 .projectpic {
@@ -209,11 +205,13 @@ h2 {
     width: 180px;
     margin-right: 2%;
     float: left;
-    margin-top: 5px;
     margin-left: 5px;
 }
 .projecttitle {
     text-align: left;
+}
+#projectlabel {
+    margin-left: 50px;
 }
 .projecttext {
     text-align: left;
@@ -334,6 +332,11 @@ footer {
         width: 100%;
         padding: 1%;
         height:auto;
+    }
+    .projectcard2 {
+        width: 100%;
+        padding 1%;
+        height: auto;
     }
 
     
