@@ -193,20 +193,24 @@ h2 {
 
 .projectcard {
     background-color: #e8e8e8;
-    border-radius: 12px;
     padding: 1%;
     padding-top: 2%;
-    padding-bottom: 2%;
     height: 200px;
-    margin-bottom: 3%;
+   
+}
+.projectcard2 {
+    padding: 1%;
+    padding-top: 2%;
+    height: 200px;
+    background-color: #d8d8d8;
 }
 .projectpic {
     clear: both;
     width: 180px;
-    border-radius: 21px;
-    padding: 2%;
+    margin-right: 2%;
     float: left;
-    
+    margin-top: 5px;
+    margin-left: 5px;
 }
 .projecttitle {
     text-align: left;
