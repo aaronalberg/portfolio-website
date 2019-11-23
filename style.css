@@ -217,14 +217,33 @@ h2 {
     text-align: left;
     
 }
+
 .button {
+    text-decoration: none;
     color: white;
     float:left;
     text-align: left;
     background-color: var(--main-theme);
     padding: 4px;
-    
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
+.button:hover, .button:focus, .button:active {
+    cursor: pointer;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+
 .projecttext a {
     color: blue;
     text-decoration: none;
@@ -294,6 +313,11 @@ footer {
 
 
 /* mobile changes */
+@media only screen and (max-width 945px) {
+    .button {
+        float:right;
+    }
+}
 @media only screen and (max-width: 795px) {
     .sidenav {
         display: none;
@@ -354,6 +378,7 @@ footer {
         bottom: 0;
         left: 0;
         padding-bottom: 5vh;
+        height: 125px;
        
         
     }
