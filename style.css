@@ -251,6 +251,7 @@ h2 {
 }
 #projects {
     padding-bottom: 50px;
+    padding-left: 50px;
 }
 .inprogress {
     font-size: .75em;
@@ -301,6 +302,7 @@ footer i {
 
 footer {
   position: absolute;
+    
   left: 0;
   bottom: 0;
   width: 100%;
