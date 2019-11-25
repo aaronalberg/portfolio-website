@@ -40,16 +40,16 @@ header {
 
 #leftheader {
     float: left;
-    margin-left: 1vw;
+    margin-left: 1%;
     margin-top: 2vh;
-    width: 49vw;
+    width: 49%;
     
 }
 #rightheader {
     font-size: 1.2em;
     float: left;
     text-align: center;
-    width: 50vw;
+    width: 50%;
     margin-top: 5vh;
     
 }
