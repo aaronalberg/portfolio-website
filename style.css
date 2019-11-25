@@ -134,7 +134,7 @@ a.icon:hover i {
 }
 #outerwrapper {
     margin:0;
-    width: calc(100vw - var(--sidenav-length));
+    width: calc(100% - var(--sidenav-length));
     position: absolute;
     z-index: 2;
     right:0;
