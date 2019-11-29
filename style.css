@@ -220,12 +220,16 @@ h2 {
 }
 
 .button {
+    
     text-decoration: none;
     color: white;
-    float:left;
+    float:right;
     text-align: left;
     background-color: var(--main-theme);
-    padding: 4px;
+    padding: 7px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -320,6 +324,9 @@ footer {
     .button {
         float:right;
     }
+    .projectcard {
+        height: auto;
+    }
 }
 @media only screen and (max-width: 795px) {
     .sidenav {
@@ -369,12 +376,8 @@ footer {
     .projectcard {
         width: 100%;
         padding: 1%;
-        height:auto;
-    }
-    .projectcard2 {
-        width: 100%;
-        padding 1%;
         height: auto;
+        padding-bottom: 7%;
     }
 
     
