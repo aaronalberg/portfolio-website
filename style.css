@@ -371,6 +371,10 @@ footer {
     }
 }
 @media only screen and (max-width: 600px) {
+    #bio {
+        margin-left: 20px;
+        width: 100vw;
+    }
     .profile {
         width: 70%;
         margin-bottom: 30px;
