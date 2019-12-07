@@ -167,6 +167,7 @@ h2 {
     text-align: center;
     
 }
+
 .profiletext {
     font-size: 1.50em;
     padding-top: 1%;
@@ -377,14 +378,38 @@ footer {
     }
 }
 @media only screen and (max-width: 600px) {
+    #leftheader {
+        line-height: normal;
+        padding-bottom: 0;
+        margin-top: 1%;
+        width: 100%;
+    }
+    
+    #rightheader {
+        
+        float: none;
+        width: auto;
+        margin: auto;
+    }
+    h1 {
+        padding-bottom: 0;
+    }
+    header {
+        height: 155px;
+        text-align: center;
+    }
     #bio {
         margin-left: 20px;
         width: 100%;
+    }
+    #projectlabel {
+        margin-left: 20px;
     }
     .profile {
         width: 70%;
         margin-bottom: 30px;
     }
+    
     #wrapper {
         width: 90%;
         min-height: calc(100% - 100px);
@@ -447,4 +472,5 @@ footer {
     
     
 }
+
 /* mobile changes end */
