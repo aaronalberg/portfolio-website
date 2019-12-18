@@ -5,6 +5,7 @@
 * {
     box-sizing: border-box;
     
+   
 }
 
 html, body {
@@ -18,7 +19,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    font-family:  sans-serif;
+    font-family:  "Raleway", "Helvetica" , sans-serif;
     text-align: center;
     margin: 0;
     padding-bottom: 10vh;
@@ -30,6 +31,7 @@ header {
     background-color: var(--main-theme);
     color: white;
     height: 150px;
+    width: 100vw;
     
 }
 
@@ -43,7 +45,6 @@ header {
 
 #leftheader {
     float: left;
-    margin-left: 1%;
     margin-top: 2vh;
     width: 49%;
     
@@ -53,7 +54,7 @@ header {
     float: left;
     text-align: center;
     width: 50%;
-    margin-top: 5vh;
+    margin-top: 5%;
     
 }
 #rightheader p {
@@ -90,7 +91,7 @@ header i {
   text-decoration: none;
   font-size: 25px;
   color: white;
-  display: block;
+  
 }
 
 .sidenav a:hover {
@@ -99,6 +100,7 @@ header i {
 
 .sidenav i {
     display: inherit;
+
 }
 
 .icon {
@@ -309,7 +311,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #555;
   color: #fff;
   z-index: 0;
@@ -318,11 +320,115 @@ footer {
 
 /* project pages  */
 .projectheader {
+    color: black;
+    display: block;
+    height: 55px;
+    padding: 3px;
+}
+
+h1.projecttitle {
+    text-align: left;
+    padding-right: 12px;
+    padding-top:0;
+    font-size: 40px;
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+.projectsection {
+    height: 400px;
+    text-align: left;
+    width: 100vw;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.projectsection:nth-child(2n) {
+    background-color: #e8e8e8;
     text-align: right;
 }
 
+.projectsection:nth-child(2n) h2 {
+    text-align: right;
+} 
+
+.chunklabel {
+    text-align: left;
+    margin: 0;  
+    padding-top: 30px;
+    font-weight: normal;
+    font-size: 50px;
+    color: var(--main-theme);
+    text-transform: uppercase;
+}
+
+.noncolor {
+    color: gray;
+}
+
+#outerwrapperproj {
+    width: 100vw;
+    position: relative;
+    right: 0;
+    padding-bottom: 138px;
+    
+}
+.picerror {
+    display: none;
+}
+
+.projpic {
+    float:right;
+    padding-top: 30px;
+    height: 350px;
+    margin-right: 2%;
+    margin-left: 5px;
+}
+.projpic2 {
+    float:left;
+    padding-top: 30px;
+    height: 350px;
+    margin-right: 2%;
+    margin-left: 5px;
+}
+
+.projdescription {
+    padding-right: 40%;
+    font-size: 20px;
+}
+.projdescription2 {
+    font-size: 20px;
+    padding-left: 40%;
+    padding-bottom: 8px;
+}
+.backButton {
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--main-theme);
+    border: 2px var(--main-theme) solid;
+    text-align: left;
+    text-decoration: none;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
 /* mobile changes */
-@media only screen and (max-width 945px) {
+@media only screen and (max-width: 1027px) {
+    .projectsection {
+        min-height: 400px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 945px) {
     .button {
         float:right;
     }
@@ -330,12 +436,19 @@ footer {
         height: auto;
     }
 }
+@media only screen and (max-width: 918px) {
+    footer {
+        height: 100px;
+    }
+}
+
+
 @media only screen and (max-width: 795px) {
     .sidenav {
         display: none;
     }
     #outerwrapper {
-        width: 100%;
+        width: 100vw;
     }
     header {
         display: block;
@@ -344,8 +457,19 @@ footer {
         display: inline;
         font-size: 1em;
     }
+    #headertext {
+        width: 100%;
+    }
     #projects {
         width: 100vw;
+    }
+}
+@media only screen and (max-width: 682px) {
+    #RBlogo {
+        display: none;
+    }
+    #desc3 {
+        padding-right: 20%;
     }
 }
 @media only screen and (max-width: 643px) {
@@ -358,6 +482,8 @@ footer {
     }
 }
 @media only screen and (max-width: 600px) {
+    
+    
     #leftheader {
         line-height: normal;
         padding-bottom: 0;
@@ -406,7 +532,7 @@ footer {
     .projectcard {
         width: 100%;
         padding: 1%;
-        height: auto;
+        overflow: auto;
         
     }
 
@@ -448,9 +574,34 @@ footer {
     #outerwrapper {
         width: 100vw;
     }
+    #mockup2 {
+        display: none;
+    }
+    #desc2 {
+        padding-left: 10%;
+    }
+
     
-    
-    
+}
+@media only screen and (max-width: 478px) {
+        
+    .projdescription {
+        padding-right: 10%;
+        font-size: 20px;
+    }
+    .projdescription2 {
+        font-size: 20px;
+        padding-left: 10%;
+    }
+    .projpic {
+        display: none;
+    }
+    .projpic2 {
+        display: none;
+    }
+    .picerror {
+        display: block;
+    }
 }
 
 /* mobile changes end */

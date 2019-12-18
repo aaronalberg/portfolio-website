@@ -4,19 +4,36 @@
         <title>Aaron Alberg</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="files/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7034cfb338.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
     </head>
     <body>
-        <header>
-             <h1 class="projectheader" >Recipe Box</h1>
-        </header>
-        <div id="outerwrapper">
-            <h1 style="color: black;">Coming Soon!</h1>
-            <a href="index.html">Return</a>
-        </div>
-        
-        <footer>
+        <div id="outerwrapperproj">
+            <div class="projectsection"> 
+                <img src="files/mockup.png" class="projpic">
+                <h2 class="chunklabel">RecipeBox <span class="noncolor">- an Android app</span></h2>
+                <p class="projdescription">Tasked with creating an Android app, we went beyond the standard weather apps and calculators to make a unique tool that we would actually use in our lives. RecipeBox uses computer vision to detect different foods in the user's picture and returns a list of recipes that can be made using the foods detected. Find it on <a href="https://github.com/aaronalberg/CS125-FInal-Project" class="resume-link" target="_blank">GitHub.</a></p>
+                <p>Aaron Alberg, Davis Keene</p>
+                <p><b>My Role:</b> frontend, UI/UX design, logo design</p>
+                <p><b>Skills/Tools:</b> Android Studio (Java), Heroku, PowerPoint</p>
+            </div>
+            <div class="projectsection">
+                <img src="files/mockup2.png" class="projpic2" alt="mockup of app" id="mockup2">
+                <h2 class="chunklabel">Development</h2>
+                <p class="projdescription2" id="desc2">The photo taken or uploaded by the user is processed using the clarifai API, which returns foods it indentifies. This list is then passed to the Recipe Puppy API to return recipes for the user.</p>
+                <p class="projdescription2" id="desc2">The frontend was developed in Java and uses Gson to accept data from the backend written in Python. I went with a minimalist logo to maintain consistency with the clean layout of the app.</p>
+            </div>
+            <div class="projectsection">
+                <img src="files/RBlogoRound.png" class="projpic" id="RBlogo">
+                <h2 class="chunklabel">Moving Forward</h2>
+                <p class="projdescription" id="desc3">Future plans for Recipe Box currently include personalization options for users, allowing them to create accounts and save favorite recipes. A port to iOS is also a possibility once feature set has been expanded and the app is more stable.</p>
+                <p class="projdescription" id="desc3"><b>Recipe Box was chosen by peers as one of the the most impressive projects in a class of over 800 students.</b></p>
+            </div>
+            
+            <a href="index.html" class="backButton">Return</a>
+            <footer>
             <p class="center foottext">
                 <a href="mailto:aaronjalberg@gmail.com"><i class="fas fa-envelope"></i> <span class="nearicon">aaronjalberg@gmail.com</span> </a> <span class="pipe">|</span> 
                 <a href="https://www.linkedin.com/in/aaron-alberg" target="_blank" ><i class="fab fa-linkedin"></i>  <span class="nearicon">linkedin.com/in/aaron-alberg</span>  </a><span class="pipe">|</span> 
@@ -24,6 +41,9 @@
             </p>
             <p class="center">© Aaron Alberg 2019</p>
         </footer>
+        </div>
+        
+        
         
     </body>
     
