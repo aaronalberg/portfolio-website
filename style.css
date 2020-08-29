@@ -102,12 +102,6 @@ a{
     transition: 0.2s;
 }
 
-.section-3 h2:hover{
-    font-size: 1.9rem;
-    color: var(--secondary);
-    cursor: pointer;
-    transition: 0.2s;
-}
 
 .section-1 a:hover{
     color: var(--secondary);
